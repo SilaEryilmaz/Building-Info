@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: silasila
+      POSTGRES_DB: project_db
+    ports:
+      - '5432:5432'

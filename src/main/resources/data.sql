@@ -1,0 +1,6 @@
+/*insert into base_entity(id, created_date, updated_date, version) values ( 1, CURRENT_TIMESTAMP , CURRENT_TIMESTAMP,0);*/
+/*insert into ADDRESS  (created_date, updated_date, version, APT_NAME, APT_NO, CITY_NAME, COORDINATS, FLOOR_NO, STREET_NAME, ZIP_CODE,id) values ( CURRENT_TIMESTAMP , CURRENT_TIMESTAMP,0, 'SEVER', 15, 'BALIKESIR', '30.223.40', 3, 'MUZE', '10500',1);
+insert into BUILDING (created_date, updated_date, version, BUILDING_NAME, FLOORS, NUMBER_OF_PERSON, ADDRESS_ID,id) values (CURRENT_TIMESTAMP , CURRENT_TIMESTAMP,0,'HOME',4, 3, (select id from Address where id=1),1);
+insert into PERSON ( created_date, updated_date, version,PERSON_AGE, PERSON_BIRTH, PERSON_GENDER, PERSON_NAME, BUILDING_ID2,id) values ( CURRENT_TIMESTAMP , CURRENT_TIMESTAMP,0,21, '02/08/1999','WOMAN','SILA ERYILMAZ',(select id from BUILDING where id=1),1);
+insert into GOODS (created_date, updated_date, version,GOODS_NAME, GOODS_PRICE,BUILDING_ID3,PERSON_ID,id) values ( CURRENT_TIMESTAMP , CURRENT_TIMESTAMP,0,'COMPUTER', '1000', (select id from BUILDING where id=1),(select id from PERSON where id=1),1);
+*/
